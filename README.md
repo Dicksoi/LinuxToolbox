@@ -19,7 +19,7 @@ sudo -i
 
 工具箱一键脚本安装命令
 ```shell
-wget -N --no-check-certificate https://raw.githubusercontents.com/yxdz2020/LinuxToolbox/master/LinuxToolbox.sh && bash LinuxToolbox.sh
+wget -N --no-check-certificate https://raw.githubusercontent.com/Dicksoi/LinuxToolbox/master/LinuxToolbox.sh && bash LinuxToolbox.sh
 ```
 
 第一次运行以后，可用快捷方式启动
