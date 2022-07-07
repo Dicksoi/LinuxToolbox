@@ -185,11 +185,10 @@ v6_dns64(){
 
 warp_script(){
     green "请选择你接下来使用的脚本"
-    echo "1. Misaka-WARP"
-    echo "2. fscarmen"
-    echo "3. fscarmen-docker"
-    echo "4. fscarmen warp解锁奈飞流媒体脚本"
-    echo "5. P3TERX"
+    echo "1. fscarmen"
+    echo "2. fscarmen-docker"
+    echo "3. fscarmen warp解锁奈飞流媒体脚本"
+    echo "4. P3TERX"
     echo "0. 返回主菜单"
     echo ""
     read -rp "请输入选项:" warpNumberInput
