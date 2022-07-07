@@ -194,11 +194,10 @@ warp_script(){
     echo ""
     read -rp "请输入选项:" warpNumberInput
 	case $warpNumberInput in
-        1) wget -N https://raw.githubusercontent.com/Dicksoi/Misaka-WARP-Script/master/misakawarp.sh && bash misakawarp.sh ;;
-        2) wget -N https://raw.githubusercontent.com/fscarmen/warp/main/menu.sh && bash menu.sh ;;
-        3) wget -N https://raw.githubusercontent.com/fscarmen/warp/main/docker.sh && bash docker.sh ;;
-        4) bash <(curl -sSL https://raw.githubusercontent.com/fscarmen/warp_unlock/main/unlock.sh) ;;
-        5) bash <(curl -fsSL https://raw.githubusercontent.com/P3TERX/warp.sh/main/warp.sh) menu ;;
+        1) wget -N https://raw.githubusercontent.com/fscarmen/warp/main/menu.sh && bash menu.sh ;;
+        2) wget -N https://raw.githubusercontent.com/fscarmen/warp/main/docker.sh && bash docker.sh ;;
+        3) bash <(curl -sSL https://raw.githubusercontent.com/fscarmen/warp_unlock/main/unlock.sh) ;;
+        4) bash <(curl -fsSL https://raw.githubusercontent.com/P3TERX/warp.sh/main/warp.sh) menu ;;
         0) menu ;;
     esac
 }
