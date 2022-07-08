@@ -435,9 +435,8 @@ menu3(){
     echo -e " ${GREEN}2.${PLAIN} wulabing v2ray"
     echo -e " ${GREEN}3.${PLAIN} wulabing xray (Nginx前置)"
     echo -e " ${GREEN}4.${PLAIN} wulabing xray (Xray前置)"
-    echo -e " ${GREEN}5.${PLAIN} misaka xray"
-    echo -e " ${GREEN}6.${PLAIN} teddysun shadowsocks"
-    echo -e " ${GREEN}7.${PLAIN} telegram mtproxy"
+    echo -e " ${GREEN}5.${PLAIN} teddysun shadowsocks"
+    echo -e " ${GREEN}6.${PLAIN} telegram mtproxy"
     echo " -------------"
     echo -e " ${GREEN}0.${PLAIN} 返回主菜单"
     echo ""
@@ -447,9 +446,8 @@ menu3(){
         2) wget -N --no-check-certificate -q -O install.sh "https://raw.githubusercontent.com/wulabing/V2Ray_ws-tls_bash_onekey/master/install.sh" && chmod +x install.sh && bash install.sh ;;
         3) wget -N --no-check-certificate -q -O install.sh "https://raw.githubusercontent.com/wulabing/Xray_onekey/nginx_forward/install.sh" && chmod +x install.sh && bash install.sh ;;
         4) wget -N --no-check-certificate -q -O install.sh "https://raw.githubusercontent.com/wulabing/Xray_onekey/main/install.sh" && chmod +x install.sh && bash install.sh ;;
-        5) wget -N --no-check-certificate https://raw.githubusercontent.com/Misaka-blog/Xray-script/master/xray.sh && bash xray.sh ;;
-        6) wget --no-check-certificate -O shadowsocks-all.sh https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks-all.sh && chmod +x shadowsocks-all.sh && ./shadowsocks-all.sh 2>&1 | tee shadowsocks-all.log ;;
-        7) mkdir /home/mtproxy && cd /home/mtproxy && curl -s -o mtproxy.sh https://raw.githubusercontent.com/sunpma/mtp/master/mtproxy.sh && chmod +x mtproxy.sh && bash mtproxy.sh && bash mtproxy.sh start ;;
+        5) wget --no-check-certificate -O shadowsocks-all.sh https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks-all.sh && chmod +x shadowsocks-all.sh && ./shadowsocks-all.sh 2>&1 | tee shadowsocks-all.log ;;
+        6) mkdir /home/mtproxy && cd /home/mtproxy && curl -s -o mtproxy.sh https://raw.githubusercontent.com/sunpma/mtp/master/mtproxy.sh && chmod +x mtproxy.sh && bash mtproxy.sh && bash mtproxy.sh start ;;
         0) menu ;;
         *) exit 1 ;;
     esac
@@ -468,25 +466,23 @@ menu4(){
     echo -e "# ${GREEN}GitLab${PLAIN}: https://gitlab.com/misaka-blog                    #"
     echo "#############################################################"
     echo ""
-    echo -e " ${GREEN}1.${PLAIN} VPS测试 (misakabench)"
-    echo -e " ${GREEN}2.${PLAIN} VPS测试 (bench.sh)"
-    echo -e " ${GREEN}3.${PLAIN} VPS测试 (superbench)"
-    echo -e " ${GREEN}4.${PLAIN} VPS测试 (lemonbench)"
-    echo -e " ${GREEN}5.${PLAIN} VPS测试 (融合怪全测)"
-    echo -e " ${GREEN}6.${PLAIN} 流媒体检测"
-    echo -e " ${GREEN}7.${PLAIN} 三网测速"
+    echo -e " ${GREEN}1.${PLAIN} VPS测试 (bench.sh)"
+    echo -e " ${GREEN}2.${PLAIN} VPS测试 (superbench)"
+    echo -e " ${GREEN}3.${PLAIN} VPS测试 (lemonbench)"
+    echo -e " ${GREEN}4.${PLAIN} VPS测试 (融合怪全测)"
+    echo -e " ${GREEN}5.${PLAIN} 流媒体检测"
+    echo -e " ${GREEN}6.${PLAIN} 三网测速"
     echo " -------------"
     echo -e " ${GREEN}0.${PLAIN} 返回主菜单"
     echo ""
     read -rp " 请输入选项 [0-7]:" menuInput
     case $menuInput in
-        1) bash <(curl -Lso- https://cdn.jsdelivr.net/gh/Misaka-blog/misakabench@master/misakabench.sh) ;;
-        2) wget -qO- bench.sh | bash ;;
-        3) wget -qO- --no-check-certificate https://raw.githubusercontent.com/oooldking/script/master/superbench.sh | bash ;;
-        4) curl -fsL https://ilemonra.in/LemonBenchIntl | bash -s fast ;;
-        5) bash <(wget -qO- --no-check-certificate https://gitlab.com/spiritysdx/za/-/raw/main/ecs.sh) ;;
-        6) bash <(curl -L -s https://raw.githubusercontent.com/lmc999/RegionRestrictionCheck/main/check.sh) ;;
-        7) bash <(curl -Lso- https://git.io/superspeed.sh) ;;
+        1) wget -qO- bench.sh | bash ;;
+        2) wget -qO- --no-check-certificate https://raw.githubusercontent.com/oooldking/script/master/superbench.sh | bash ;;
+        3) curl -fsL https://ilemonra.in/LemonBenchIntl | bash -s fast ;;
+        4) bash <(wget -qO- --no-check-certificate https://gitlab.com/spiritysdx/za/-/raw/main/ecs.sh) ;;
+        5) bash <(curl -L -s https://raw.githubusercontent.com/lmc999/RegionRestrictionCheck/main/check.sh) ;;
+        6) bash <(curl -Lso- https://git.io/superspeed.sh) ;;
         0) menu ;;
         *) exit 1 ;;
     esac
@@ -506,8 +502,6 @@ menu5(){
     echo "#############################################################"
     echo ""
     echo -e " ${GREEN}1.${PLAIN} 哪吒面板"
-    echo -e " ${GREEN}2.${PLAIN} 可乐ServerStatus-Horatu"
-    echo " -------------"
     echo -e " ${GREEN}0.${PLAIN} 返回主菜单"
     echo ""
     read -rp " 请输入选项 [0-2]:" menuInput
