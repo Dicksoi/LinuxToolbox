@@ -24,7 +24,7 @@ wget -N --no-check-certificate https://raw.githubusercontent.com/Dicksoi/LinuxTo
 
 第一次运行以后，可用快捷方式启动
 ```bash
-bash LinuxToolbox.sh
+bash MisakaToolbox.sh
 ```
 
 ## 工具箱功能提议
